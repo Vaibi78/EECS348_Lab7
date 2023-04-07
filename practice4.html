@@ -1,0 +1,49 @@
+<html>
+
+    <head>
+            <h1>EECS 348 Lab Link Four</h1>
+    </head>
+
+    <body>
+        <style> 
+            body {background-color: rgba(91, 199, 85, 0.193);
+            }
+            
+        </style>
+        <style>
+            .button {
+              padding: 15px 25px;
+              font-size: 14px;
+              text-align: center;
+              cursor: pointer;
+              outline: none;
+              color: #fff;
+              background-color: #04AA6D;
+              border: none;
+              border-radius: 15px;
+              box-shadow: 0 9px #999;
+            }
+            
+            .button:hover {background-color: #3e8e41}
+            
+            .button:active {
+              background-color: #3e8e41;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+            }
+            </style>
+            <form action="practice4.php" method="get">
+                <label for="num"> Size of Multiplication Table:</label>
+            <input type="number" id="num" name="num" required>
+            <button class="button" type="submit"> Generate Table</button>
+            </form>
+         <?php
+            if (isset($_GET["num"])) {
+            include("practice4.php");
+            }
+        ?>
+    </body>
+
+</html>
+
+
